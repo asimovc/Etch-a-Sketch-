@@ -11,6 +11,10 @@ body {
 	height: 100vh;
 }
 
+#btn {
+	margin-bottom: 40px;
+}
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
