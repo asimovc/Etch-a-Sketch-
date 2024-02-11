@@ -27,8 +27,12 @@ hover.addEventListener("mouseover", (event) => {
 	event.target.style.background = "red";
 });
 
-btn.addEventListener('click', (event) => {
-	size = prompt('Give the size of the grid');
+btn.addEventListener('click', () => {
+	size = prompt('Give the size of the grid (MAX 100)');
 
-	newGrid(size);
+	if(size === 'null' || size >= 100){
+		alert("Size not valid, enter a number again");
+	}else{
+		newGrid(size);
+	}
 })
