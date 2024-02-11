@@ -30,7 +30,7 @@ hover.addEventListener("mouseover", (event) => {
 btn.addEventListener('click', () => {
 	size = prompt('Give the size of the grid (MAX 100)');
 
-	if(size === 'null' || size >= 100){
+	if(size === null || size >= 100 || size == 0){
 		alert("Size not valid, enter a number again");
 	}else{
 		newGrid(size);
